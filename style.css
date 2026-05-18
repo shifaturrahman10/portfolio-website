@@ -1,0 +1,55 @@
+body{
+  background:#f0f2f5;
+  font-family:Arial;
+  padding:20px;
+}
+
+h1{
+  color:#007bff;
+}
+
+h2{
+  color:#333;
+  margin-top:30px;
+}
+
+p{
+  color:#555;
+  line-height:1.6;
+}
+
+ul{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+}
+
+li{
+  margin:10px 0;
+}
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  max-width:500px;
+  margin:auto;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.profile{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  display:block;
+  margin:auto;
+  object-fit:cover;
+}
+button{
+  background:#007bff;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:20px;
+}
