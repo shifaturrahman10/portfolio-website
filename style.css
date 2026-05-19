@@ -70,6 +70,7 @@ button{
   cursor:pointer;
   margin-top:20px;
   transition:0.3s;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
 a{
@@ -105,8 +106,31 @@ a:hover{
   transform:scale(1.05);
 }
 
-.links{
-  text-align:center;
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.social-btn{
+    width: 18px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-btn:hover{
+    background: #0077ff;
+    transform: scale(1.1);
 }
 
 .about{
@@ -153,4 +177,70 @@ section{
     opacity:1;
     transform:translateY(0);
   }
+}
+
+.dark{
+  background:#121212;
+}
+
+.dark .card{
+  background:#1e1e1e;
+  color:white;
+}
+
+.dark h2,
+.dark p,
+.dark footer{
+  color:#ddd;
+}
+
+.dark .about,
+.dark .project,
+.dark ul{
+  background:#2a2a2a;
+}
+
+.dark{
+  background:#121212;
+}
+
+.dark .card{
+  background:#1e1e1e;
+  color:white;
+}
+
+.dark h2,
+.dark p,
+.dark footer{
+  color:#ddd;
+}
+
+.dark .about,
+.dark .project,
+.dark ul{
+  background:#2a2a2a;
+}
+
+/* Dark mode button */
+#themeBtn{
+  width:60px;
+  height:60px;
+  border:none;
+  border-radius:50%;
+  background:black;
+  color:white;
+  font-size:28px;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+body{
+  transition:0.4s;
+}
+
+.card{
+  transition:0.4s;
 }
