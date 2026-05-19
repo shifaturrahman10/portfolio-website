@@ -6,15 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <div class="card">
   <img src="profile.jpg" class="profile">
   <h1>Shifatur Rahman</h1>
 
-  <p class="title">
-  Electrical Engineering Student & Tech Learner
-</p>
+  <p class="title" id="typing"></p>
 
   <h2>About Me</h2>
 
@@ -41,23 +38,37 @@
   </p>
 </div>
   <button>Contact With Me</button>
+  <button id="themeBtn" onclick="toggleTheme()">🌙</button>
   <div class="links">
   <h2> </h2>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-<a href="https://github.com/shifaturrahman10">
-  GitHub
+<div class="social-links">
+
+    <a href="https://github.com/shifaturrahman10" target="_blank" class="social-btn">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://facebook.com/shifatur.rahman.0" target="_blank" class="social-btn">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com/shifatur.rahman1.0" target="_blank" class="social-btn">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="social-btn">
+    <i class="fa-solid fa-envelope"></i>
 </a>
 
-<br><br>
-
-<a href="https://facebook.com/shifatur.rahman.0">
-  Facebook
-</a>
 </div>
 <footer>
   Made by Shifatur Rahman 🚀
 </footer>
 </div>
+<script src="script.js" defer></script>
 </body>
 
 </html>
