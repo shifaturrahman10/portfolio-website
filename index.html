@@ -7,13 +7,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="particles"></div>
+  <nav>
+
+<a href="#" class="nav-link">Home</a>
+
+<a href="#about" class="nav-link">About</a>
+
+<a href="#projects" class="nav-link">Projects</a>
+
+<a href="#contact" class="nav-link">Contact</a>
+
+</nav>
+
   <div class="card">
   <img src="profile.jpg" class="profile">
   <h1>Shifatur Rahman</h1>
 
   <p class="title" id="typing"></p>
 
-  <h2>About Me</h2>
+  <h2 id="about">About Me</h2>
 
   <p class="about">
   I am an Electrical Engineering student passionate about technology, programming and continuous learning.
@@ -21,14 +34,37 @@
 
   <h2>Skills</h2>
 
-  <ul>
-  <li>⚡ GitHub</li>
-  <li>🌐 HTML</li>
-  <li>🎨 CSS</li>
-  <li>💻 Technology</li>
-</ul>
+  <div class="skill">
 
-  <h2>Projects</h2>
+  <p>🌐 HTML</p>
+
+  <div class="bar">
+    <div class="fill html">90%</div>
+  </div>
+
+</div>
+
+<div class="skill">
+
+  <p>🎨 CSS</p>
+
+  <div class="bar">
+    <div class="fill css">80%</div>
+  </div>
+
+</div>
+
+<div class="skill">
+
+  <p>⚡ GitHub</p>
+
+  <div class="bar">
+    <div class="fill github">75%</div>
+  </div>
+
+</div>
+
+  <h2 id="projects">Projects</h2>
 
   <div class="project">
   <h3>Portfolio Website</h3>
@@ -37,8 +73,12 @@
     A responsive personal portfolio website built using HTML and CSS.
   </p>
 </div>
-  <button>Contact With Me</button>
-  <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+ <h2 id="contact">Connect With Me</h2>
+  
+  <button id="themeBtn" class="dark-btn" onclick="toggleMode()">
+  🌙
+</button>
+
   <div class="links">
   <h2> </h2>
 <!-- Font Awesome CDN -->
@@ -68,7 +108,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   Made by Shifatur Rahman 🚀
 </footer>
 </div>
-<script src="script.js" defer></script>
-</body>
+ <script>
+const particlesContainer = document.getElementById("particles");
 
+for (let i = 0; i < 50; i++) {
+  let particle = document.createElement("div");
+  particle.classList.add("particle");
+
+  particle.style.left = Math.random() * 100 + "vw";
+  particle.style.animationDuration = (Math.random() * 5 + 5) + "s";
+  particle.style.opacity = Math.random();
+
+  particlesContainer.appendChild(particle);
+}
+</script>
+<script src="script.js" defer></script>
+
+</body>
 </html>
