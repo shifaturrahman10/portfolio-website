@@ -1,0 +1,437 @@
+nav{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom:20px;
+
+  position:sticky;
+  top:10px;
+  z-index:1000;
+
+  background:#ffffffaa;
+  padding:12px;
+  border-radius:12px;
+  backdrop-filter:blur(10px);
+}
+nav a{
+  text-decoration:none;
+  background:white;
+  color:#007bff;
+  padding:10px 15px;
+  border-radius:8px;
+  font-weight:bold;
+
+  transition:0.3s;
+
+  display:inline-block;
+}
+nav a:hover{
+
+  transform:translateY(-3px);
+
+  background:#0077ff;
+  color:white;
+
+  box-shadow:0 0 15px rgba(0,119,255,0.7);
+
+}
+body{
+  background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+  font-family:Poppins,sans-serif;
+  padding:20px;
+  padding-bottom:250px;
+}
+
+h1{
+  color:#007bff;
+  text-align:center;
+  font-size:40px;
+  margin-top:20px;
+}
+
+h2{
+  color:#333;
+  margin-top:40px;
+  margin-bottom:15px;
+  text-align:center;
+}
+
+p{
+  color:#555;
+  line-height:1.6;
+}
+
+ul{
+  background:#ffffffcc;
+  padding:20px;
+  border-radius:15px;
+  list-style:none;
+  max-width:300px;
+  margin:auto;
+}
+
+li{
+  margin:12px 0;
+  background:#007bff;
+  color:white;
+  padding:10px;
+  border-radius:8px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  max-width:500px;
+  width:90%;
+  margin:auto;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.profile{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  display:block;
+  margin:auto;
+  object-fit:cover;
+}
+
+button{
+  background:#000000;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:20px;
+  transition:0.3s;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+a{
+  display:inline-block;
+  text-decoration:none;
+  background:#000000;
+  color:white;
+  padding:10px 18px;
+  border-radius:8px;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+p{
+  text-align:center;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+footer{
+  text-align:center;
+  margin-top:30px;
+  color:#555;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+a:hover{
+  transform:scale(1.05);
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.social-btn{
+    width: 18px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-btn:hover{
+    background: #0077ff;
+    transform: scale(1.1);
+}
+
+.about{
+  background:#ffffffcc;
+  padding:20px;
+  border-radius:15px;
+  line-height:1.8;
+}
+
+.title{
+  font-size:18px;
+  color:#444;
+  margin-top:-10px;
+  margin-bottom:25px;
+}
+
+section{
+  margin-bottom:30px;
+}
+
+.project{
+  background:#ffffffcc;
+  padding:20px;
+  border-radius:15px;
+  margin-top:15px;
+}
+
+.project h3{
+  text-align:center;
+  color:#007bff;
+}
+
+.card{
+  animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.dark{
+  background:#121212;
+}
+
+.dark .card{
+  background:#1e1e1e;
+  color:white;
+}
+
+.dark h2,
+.dark p,
+.dark footer{
+  color:#ddd;
+}
+
+.dark .about,
+.dark .project,
+.dark ul{
+  background:#2a2a2a;
+}
+
+/* Dark mode button */
+#themeBtn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:15px;
+  height:38px;
+  border:none;
+  border-radius:50%;
+  background:black;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+body{
+  transition:0.4s;
+}
+
+.card{
+  transition:0.4s;
+  position:relative;
+}
+
+.skill{
+  margin-top:20px;
+}
+
+.bar{
+  width:100%;
+  height:22px;
+  background:#ddd;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.fill{
+  height:100%;
+  color:white;
+  text-align:center;
+  line-height:22px;
+  border-radius:20px;
+  font-size:14px;
+  animation:fillAnim 2s ease;
+}
+
+.html{
+  width:90%;
+  background:#ff5733;
+}
+
+.css{
+  width:80%;
+  background:#0077ff;
+}
+
+.github{
+  width:75%;
+  background:#333;
+}
+
+.autocad-electrical{
+  width:95%;
+  background:#558 ;
+}
+@keyframes fillAnim{
+
+  from{
+    width:0;
+  }
+
+}
+#about,
+#projects,
+#contact{
+  scroll-margin-top:100px;
+}
+.active{
+  background:#0077ff !important;
+  color:white !important;
+
+  box-shadow:0 0 15px rgba(0,119,255,0.7);
+}
+
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* each particle */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: floatUp 10s linear infinite;
+  box-shadow: 0 0 10px white;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+
+/* BLOCK STYLE */
+.block{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  margin:20px auto;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* PROJECT HORIZONTAL LAYOUT */
+.project-container{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.project-card{
+  background:#ffffff;
+  color:#111;
+  padding:20px;
+  border-radius:15px;
+  flex:1;
+  min-width:200px;
+  transition:0.3s;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* DARK MODE FIX FOR BLOCKS */
+.dark .block,
+.dark .project-card{
+  background:#1e1e1e;
+  color:white;
+  box-shadow:0 0 10px rgba(255,255,255,0.05);
+}
+
+/* PROJECT CARD LINK FIX */
+.project-card a{
+  background:none;
+  color:inherit;
+  padding:0;
+}
+
+.project-card a h3{
+  margin-bottom:10px;
+  transition:0.3s;
+}
+
+.project-card a h3:hover{
+  transform:scale(1.05);
+  color:#0055cc;
+}
+
+/* SOCIAL ICON FIX */
+.social-btn{
+    width:7px;
+    height:20px;
+    background:black;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    text-decoration:none;
+    transition:0.3s;
+}
